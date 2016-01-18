@@ -1,40 +1,39 @@
 {
-    "name": "YunoHost example app",
-    "id": "ynhexample",
+    "name": "YunoHost publish TTRSS public",
+    "id": "ynhttrsspublic",
     "description": {
-        "en": "Example package for Yunohost applications.",
-        "fr": "Exemple de package d'application pour Yunohost."
+        "en": "Very simple web page publishing the public articles of TTRSS",
+        "fr": "Page web très succinte permettant d'afficher les articles publiés de TTRSS"
     },
     "license": "free",
     "maintainer": {
-        "name": "John doe",
+        "name": "luc38090",
         "email": "john.doe@example.com",
-        "url": "http://example.com"
+        "url": "https://github.com/luc38090"
     },
     "multi_instance": "false",
     "services": [
         "nginx",
-        "php5-fpm",
-        "mysql"
+        "php5-fpm"
     ],
     "arguments": {
         "install" : [
             {
                 "name": "domain",
                 "ask": {
-                    "en": "Choose a domain for ynhexample",
-                    "fr": "Choisissez un domaine pour ynhexample"
+                    "en": "Choose a domain for ynhttrsspublic",
+                    "fr": "Choisissez un domaine pour ynhttrsspublic"
                 },
                 "example": "example.com"
             },
             {
                 "name": "path",
                 "ask": {
-                    "en": "Choose a path for ynhexample",
-                    "fr": "Choisissez un chemin pour ynhexample"
+                    "en": "Choose a path for ynhttrsspublic",
+                    "fr": "Choisissez un chemin pour ynhttrsspublic"
                 },
-                "example": "/example",
-                "default": "/example"
+                "example": "/mypublicttrss",
+                "default": "/mypublicttrss"
             },
             {
                 "name": "admin",
