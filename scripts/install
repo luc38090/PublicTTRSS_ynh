@@ -26,7 +26,7 @@ sudo cp -a ../sources/. $final_path
 
 # Set permissions to app files
 # you may need to make some file and/or directory writeable by www-data (nginx user)
-sudo chown -R root:root $final_path
+sudo chown -R www-data:www-data $final_path
 
 # If your app use a MySQL database you can use these lines to bootstrap
 # a database, an associated user and save the password in app settings
