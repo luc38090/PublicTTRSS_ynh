@@ -13,7 +13,7 @@ sudo cp -a $backup_dir/sources/. /var/www/$app
 
 # Restore permissions to app files
 # you may need to make some file and/or directory writeable by www-data (nginx user)
-sudo chown -R root:root $final_path
+sudo chown -R www-data:www-data $final_path
 
 # Restore mysql database if needed
 # db_pwd=$(sudo yunohost app setting $app mysqlpwd)
